@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BBSinput.html</title>
+</head>
+<body>
+	<h2>게시판 글쓰기</h2>
+	<form action="/bbs-post" method="post">
+		<h3>이름 : <input type= "text" name="NAME" /></h3>
+		<h3>제목 : <input type= "text" name="TITLE" /></h3>
+		<h3>내용</h3>
+		<textarea rows="10" cols="80" name="CONTENT"></textarea>
+		<hr>
+		<input type= "reset"	value="취소"/>
+		<input type= "submit"	value="등록"/>
+	</form>
+
+</body>
+</html>

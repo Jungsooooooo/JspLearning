@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>color.html</title>
+	<style>
+		/* 	r(red), g(green), b(blue), a(alpha:투명도)
+			hsl(색깔, 채도, 밝기)
+			h(hue) (색조=색상=색깔) 숫자만 사용한다.  
+				0(=360빨강), 120(녹색), 240(파랑)
+			s(saturation) 채도(= 컬러 정도) %는 필수
+				0%는 음영, 100%는 컬러 최대치
+			l(lighness) 명도(= 밝기) %단위는 필수
+				0%는 검정, 50%는 보통, 100%는 흰색
+			a(alpha) 0.0 ~ 1.0사이로 기술한다. 
+				0은 완전 투명 1은 완전 불투명
+		*/
+		.color_1 {	color:	rgb(255, 0, 0);				}	
+		.color_2 {	color:	rgba(255, 0, 0, 0.3);		}
+		.color_3 {	color:	hsl(27, 88%, 58%);			}
+		.color_4 {	color:	hsla(27, 88%, 58%, 0.7);	}
+	</style>
+</head>
+<body>
+	<h1>color 속성</h1>
+	<h2>요소의 전경색을 설정한다.</h2>
+	<p class="color_1">
+		요소의 글자색상을 RGB형태로 지정합니다.
+	</p>
+	<p class="color_2">
+		요소의 글자색상을 RGB형태로 지정합니다.
+	</p>
+	<p class="color_3">
+		요소의 글자색상을 RGB형태로 지정합니다.
+	</p>
+	<p class="color_4">
+		요소의 글자색상을 RGB형태로 지정합니다.
+	</p>
+</body>
+</html>

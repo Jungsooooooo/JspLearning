@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>max-height.html</title>
+	<style>
+	/*
+		box-sizing:		border-box;
+		테두리와 안쪽 여백의 크기도 요소의 크기로 고려한다.
+		너비를 100px로 설정하고 테두리와 안쪽 여백을 추가하면 컨텐츠 영역이 줄어들어
+		총 너비가 100px을 유지한다
+	*/
+		p {
+			position:		absolute;
+			box-sizing:		border-box;
+			width:			200px;
+			padding:		8px 10px;
+			background:		#CCAABB;
+			border:			#F49 solid 4px;
+		}
+		.max-height_1 {
+			left:		240px;
+			max-height:	160px;
+		}
+		.max-height_2 {
+			left:		480px;
+			max-height:	160px;
+		}
+	</style>
+</head>
+<body>
+	<h1>max-height</h1>
+	<p class="auto">
+		1. max-height는 요소의 최대 높이를 설정하는 속성입니다.
+	</p>
+	<p class="max-height_1">
+		2. max-height는 요소의 최대 높이를 설정하는 속성입니다.
+	</p>
+	<p class="max-height_2">
+		3. max-height는 요소의 최대 높이를 설정하는 속성입니다.
+		컨텐츠의 높이로 계산된 값이 max-height 속성의 값보다 작을 경우에 요소의 높이는
+		max-height에서 지정한 높이가 되고, 컨텐츠의 높이로 계산된 값이 max-height의 속성 값보다
+		클 경우도 max-height에서 지정한 높이 이상으로 커지지 않습니다.	
+	</p>
+</body>
+</html>

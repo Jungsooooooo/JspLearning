@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>margin.html</title>
+	<style>
+		div {
+			display:		inline-block;
+			background:		#FFC;
+			border:			#F35 solid 4px;
+		}
+		.margin_1 {
+			margin:	20px;
+		}
+		.margin_2 {
+			margin:	10px 20px;
+		}
+		.margin_3 {
+			margin:	10px 20px 30px;
+		}
+		.margin_4 {
+			margin:	10px 20px 30px 40px;
+		}
+		.margin_5 {
+			margin-top:		40px;
+			margin-right:	30px;
+			margin-bottom:	20px;
+			margin-left:	10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>margin 속성</h1>
+	<h2>border를 기준으로 다른 요소와의 바깥쪽 여백을 지정한다.</h2>
+	<h3>속성 값에 음수 값을 사용할 수가 있으며 상하로 인접한 박스의</h3>
+	<h3>display 속성값이 block인 경우 Margin Collapsing(마진 겹침)현상이 발생한다.</h3>
+	<div class="margin_1">
+		<p>컨텐츠 영역</p>
+	</div>
+	<div class="margin_2">
+		<p>컨텐츠 영역</p>
+	</div>
+	<div class="margin_3">
+		<p>컨텐츠 영역</p>
+	</div>
+	<div class="margin_4">
+		<p>컨텐츠 영역</p>
+	</div>
+	<div class="margin_5">
+		<p>컨텐츠 영역</p>
+	</div>
+</body>
+</html>

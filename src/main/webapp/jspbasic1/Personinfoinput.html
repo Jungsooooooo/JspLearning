@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Personinfoinput.html</title>
+</head>
+<body>
+	<h2>개인 정보 입력</h2>
+	<form action="/pinfo-result" method="get">
+		이		름 : <input type="text" name= "NAME"/><br/><br/>
+		아 	이	디 : <input type="text" name= "ID"/><br/><br/>
+		비밀  번호 : <input type="password" name="PASSWORD"/><br/><br/>
+		성별:
+			여 <input type="radio" name="GENDER" value="FEMALE"/>
+			남 <input type="radio" name="GENDER" value="MALE"><br/><br/>
+		메일 수신 여부
+			공지 	메일:	<input type="checkbox" name="INOTICE"/>
+			광고 	메일:	<input type="checkbox" name="CNOTICE"/>
+			배송확인메일:	<input type="checkbox" name="DNOTICE"/><br/><br/>
+		직		업 :
+			<select name="JOB">
+				<option>프로그래머</option>
+				<option>운동선수</option>
+				<option>전기기사</option>
+				<option>회사원</option>
+				<option>기타</option>
+			</select><br/><br/>
+			<input type="button" value="취소"/>
+			<input type="submit" value="확인"/>	
+ 	</form>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/* 회사소개 배경 이미지 */
+#sub_img {
+	width:					971px;
+	height:					179px;
+	background-image:		url(../images/company/sub_back.png);
+	background-repeat:		no-repeat;
+	background-position:	left top;
+}
+
+/* 서브 메뉴 */
+#sub_menu {
+	width:					238px;
+	float:					left;
+	margin:					20px;
+	font-family:			Verdana, Geneva, sans-serif;
+	font-size:				1em;
+}
+
+#sub_menu ul {
+	margin:					20px 0 0 10px;
+	list-style:				none;	/* 리스트 왼쪽 검은 동그라미를 없앤다. */
+}
+
+#sub_menu a {
+	/* 밑줄을 없앤다. */
+	text-decoration:		none;
+	color:					#666;
+	display:				block;
+	height:					15px;
+	width:					150px;
+	padding:				7px;
+	/* 메뉴들 간의 구분을 위해서 보더 밑부분만 보이게 한다. */
+	border-bottom-width:		1px;
+	border-bottom-style:		dotted;
+	border-bottom-color:		#999;
+	background-image:			url(../images/bullet.gif);
+	background-repeat:			no-repeat;
+	background-position:		right center;
+}
+
+/* 서브메뉴에 마우스 포인터가 올라가면 */
+#sub_menu a:hover {
+	background-image:			url(../images/bullet_orange.gif);
+	background-repeat:			no-repeat;
+	background-position:		right center;
+	color:						#F90;
+}
+
+/* 컨텐츠 */
+article {
+	/* border:					1px solid #CCC; */
+	float:					right;
+	width:					660px;
+	padding-right:			30px;
+	font-family:			Verdana, Geneva, sans-serif;
+	font-size:				1em;
+	line-height:			1.5em;	/* 줄 간격 */
+}
+
+article h1 {
+	font-family:			"Times New Roman", Times, serif;
+	font-size:				45px;
+	color:					#CCC;
+	margin:					20px 0;
+	font-weight:			normal;
+}
+
+article p {
+	padding-left:			10px;
+}
+
+figure.ceo {
+	float:					right;
+	margin:					5px;
+}
+
+figcaption {
+	text-align:				center;
+	color:					#39F;
+}
+
+/* History Page 관련 */
+article .y2011, article .y2010, article .y2009 {
+	/* 년도글자 대신에 그림으로 대체하기 위해서 padding을 사용한다. */
+	padding:				10px 0 0 150px;
+	border-top-width:		1px;
+	border-top-style:		solid;
+	border-top-color:		#999;
+}
+
+/* 년도를 그림으로 대체하기 위해 년도를 보이지 않게 한다. */
+article .y2011 h3, article .y2010 h3, article .y2009 h3 {
+	display:				none;
+}
+
+article .y2011 {
+	background-image:		url(../images/company/2011.jpg);
+	background-repeat:		no-repeat;
+	background-position:	left top;
+}
+
+article .y2010 {
+	background-image:		url(../images/company/2010.jpg);
+	background-repeat:		no-repeat;
+	background-position:	left top;
+}
+
+article .y2009 {
+	background-image:		url(../images/company/2009.jpg);
+	background-repeat:		no-repeat;
+	background-position:	left top;
+}
+
+article .y2011 dl, article .y2010 dl, article .y2009 dl {
+	margin:					0 0 10px 0;
+	padding:				0 0 10px 0;
+	border-bottom-width:	1px;
+	border-bottom-style:	dotted;
+	border-radius:			10px;
+	border-color:			#CCC;
+}
+
+article .y2011 dt, article .y2010 dt, article .y2009 dt {
+	float:					left;
+	text-transform:			capitalize;	/* 단어의 첫 글자를 모두 대문자로 바꿔줌! 
+										  uppercase; => 모든 글자를 대문자로!! */
+	font-family:			Tahoma, Geneva, sans-serif;
+	font-size:				15px;
+	color:					#39F;
+	padding-top:			3px;
+	margin:					0;
+}
+
+article .y2011 dd, article .y2010 dd, article .y2009 dd {
+	padding:				0 0 0 15px;
+	line-height:			2em;
+	background-image:		url(../images/company/h_bullet.gif);
+	background-repeat:		no-repeat;
+	background-position:	left, center;
+}
+
+article dl.dot_none {
+	border-bottom:			none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

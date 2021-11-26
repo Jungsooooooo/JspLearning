@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>JspEducation</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+	<servlet>
+		<servlet-class>com.edu.servlet.HundredServlet</servlet-class>
+		<servlet-name>hundred-servlet</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<url-pattern>/hundred</url-pattern>
+		<servlet-name>hundred-servlet</servlet-name>
+	</servlet-mapping>
+  
+	<servlet>
+		<servlet-class>com.edu.servlet.AdderServlet</servlet-class>
+		<servlet-name>AdderServlet</servlet-name>
+	</servlet>  
+  	<servlet-mapping>
+  		<url-pattern>/adder</url-pattern>
+		<servlet-name>AdderServlet</servlet-name>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-class>com.edu.servlet.BBSPostServlet</servlet-class>
+		<servlet-name>bbs-post-Servlet</servlet-name>
+	</servlet>  
+  	<servlet-mapping>
+  		<url-pattern>/bbs-post</url-pattern>
+		<servlet-name>bbs-post-Servlet</servlet-name>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-class>com.edu.servlet.PersonalInfoServlet</servlet-class>
+		<servlet-name>personal-info-Servlet</servlet-name>
+	</servlet>
+  	<servlet-mapping>
+  		<url-pattern>/pinfo-result</url-pattern>
+		<servlet-name>personal-info-Servlet</servlet-name>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-class>com.edu.servlet.AnimalServlet</servlet-class>
+		<servlet-name>animal-Servlet</servlet-name>
+	</servlet>
+  	<servlet-mapping>
+  		<url-pattern>/animal</url-pattern>
+		<servlet-name>animal-Servlet</servlet-name>
+  	</servlet-mapping>
+  
+  <servlet>
+		<servlet-class>com.edu.servlet.FavoriteResultServlet</servlet-class>
+		<servlet-name>result-Servlet</servlet-name>
+	</servlet>
+  	<servlet-mapping>
+  		<url-pattern>/result</url-pattern>
+		<servlet-name>result-Servlet</servlet-name>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-class>com.edu.servlet.NewAdderServlet</servlet-class>
+		<servlet-name>new-adder-servlet</servlet-name>
+	</servlet>
+  	<servlet-mapping>
+  		<url-pattern>/new-adder</url-pattern>
+		<servlet-name>new-adder-servlet</servlet-name>
+  	</servlet-mapping>
+  	
+  	<servlet>
+		<servlet-class>com.edu.servlet.DataErrorServlet</servlet-class>
+		<servlet-name>data-error-servlet</servlet-name>
+	</servlet>
+  	<servlet-mapping>
+  		<url-pattern>/data-error</url-pattern>
+		<servlet-name>data-error-servlet</servlet-name>
+  	</servlet-mapping>
+  	
+  	<!--  
+  	<error-page>
+  		<exception-type>java.lang.NumberFormatException</exception-type>
+  		<location>/jspbasic4/NumberFormatError.jsp</location>
+  	</error-page>
+  	
+  	<error-page>
+  		<exception-type>java.lang.ArithmeticException</exception-type>
+  		<location>/jspbasic4/ArithmeticError.jsp</location>
+  	</error-page>
+  	
+  	<error-page>
+  		<error-code>404</error-code>
+  		<location>/jspbasic4/NotFoundError.jsp</location>
+  	</error-page>
+  	
+  	<error-page>
+  		<error-code>500</error-code>
+  		<location>/jspbasic4/ServerInternalError.jsp</location>
+  	</error-page>
+   -->
+   
+   <context-param>
+   	<param-name>DB_NAME</param-name>
+   	<param-value>shopdb</param-value>
+   </context-param>
+   
+   <servlet>
+		<servlet-class>com.edu.store.PersonalInfoServlet</servlet-class>
+		<servlet-name>pinfo-servlet</servlet-name>
+	</servlet>
+  	<servlet-mapping>
+  		<url-pattern>/pInfo</url-pattern>
+		<servlet-name>pinfo-servlet</servlet-name>
+  	</servlet-mapping>
+   
+   <!--  <filter>
+   		<filter-name>characterEncodingFilter</filter-name>
+   		<filter-class>com.newlecture.web.filter.CharacterEncodingFilter</filter-class>
+   </filter>
+   <filter-mapping>
+   		<filter-name>characterEncodingFilter</filter-name>
+   		<url-pattern>/*</url-pattern>
+   </filter-mapping>
+   -->
+   
+   
+</web-app>
+
+
+
+

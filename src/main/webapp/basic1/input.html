@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>input.html</title>
+	<style>
+		#good {
+			background-color:	#996600;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>입력 양식</h1>
+		<form action="welcome.html" method="post" id="formExam" name="formExam">
+			<p>
+				<span>Text Type</span>
+				<br>
+				<label for="userId">아이디</label>
+				<input type="text" id="good" name="userId" />
+				<!-- type : 입력하는 데이터 타입 -->
+				<!-- id   : 이 페이지에서 유일하게 가리키기 위해서 사용 -->
+				<!-- name : 변수이름 -->
+			</p>
+			<p>
+				<span>Password Type</span>
+				<br>
+				<label for="userPwd">비밀번호</label>
+				<input type="password" id="bed" name="userPwd" maxlength="8" />
+			</p>
+			<p>
+				<span>Search Type</span>
+				<br>
+				<label for="keyword">검색</label>
+				<input type="search" id="keyword" name="keyword" size="50"/>
+			</p>
+			<p>
+				<span>Telephone Type</span>
+				<br>
+				<label for="tel">전화번호</label>
+				<input type="tel" id="tel" name="tel"/>
+			</p>
+			<p>
+				<span>URL Type</span>
+				<p>
+				<label for="url">홈페이지</label>
+				<input type="url" id="home" name="home" value="www.naver.com"/>
+				<br>
+				<label for="goto">Google</label>
+				<input type="url" readonly value="https://www.google.com" id="google" name="google"/>
+			</p>
+			<p>
+				<span>Email Type</span>
+				<br>
+				<label for="Email">이메일</label>
+				<input type="email" id="Email" name="Email" />
+			</p>
+			<p>
+				<span>Date Type</span>
+				<br>
+				<label for="reservationDate">예약 가능한 일자</label>
+				<input type="date" min="2021-03-01" max="2021-08-15" step="7" id="reservationDate" name="reservationDate" />
+			</p>
+			<p>
+				<span>Number Type</span>
+				<br>
+				<label for="age">연령</label>
+				<input type="number" id="age" name="age"/>
+			</p>
+			<p>
+				<span>CheckBox Type</span>
+				<br>
+				<input type="checkbox" id="complete" name="curriculum">
+				<label for="complete">수료</label>
+				<input type="checkbox" id="incomplete" name="curriculum" checked="checked">
+				<label for="incomplete">미수료</label>
+			</p>
+			<p>
+				<span>Radio Type</span>
+				<br>
+				<input type="radio" id="male" name="gender" checked="checked">
+				<label for="female">여자</label>
+				<input type="radio" id="female" name="gender">
+				<label for="male">남자</label>
+			</p>
+			<p>
+				<span>File Type</span>
+				<br>
+				<label for="profile">프로필 이미지</label>
+				<label for="chooseFile">파일선택</label>
+				<br>
+				<input type="file" id="profile" name="profile"/>
+			</p>
+			<p>
+				<span>Hidden Type</span>
+				<br>
+				<input type="hidden" id="rePassword" name="rePassword" value="1234"/>
+			</p>
+			<p>	
+				<!-- input type="submit"을 누르면 action에 기술된 곳으로 이동한다. -->
+				<input type="reset"  value="취소" form="formExam"/>
+				<input type="submit" value="전송" /> 
+			</p>
+			
+		</form>
+	</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

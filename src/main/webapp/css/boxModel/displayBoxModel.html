@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>displayBoxModel.html</title>
+	<style>
+		p, span {
+			border:		#FF2233 solid 4px;
+			padding:	5px;
+		}
+		.block 			{	display:	block;			}
+		.inline			{	display:	inline;			}	
+		.inline-block	{	display:	inline-block;	width:	200px;		}
+		.none			{	display:	none;			width:	200px;		}
+		.run-in			{	display:	run-in;			}
+		.list-item		{	display:	list-item;
+							list-style-type:	disc;
+							margin-left:2em;			}
+		.table			{	display:	table;			}
+		.table-caption	{	display:	table-caption;	width:	400px;
+							text-align:	center;			margin-bottom:	10px;	}
+		.table-row		{	display:	table-row;		}
+		.table-header	{	display:	table-header;	border:	2px solid #2222FF;	
+							width:		200px;			padding:10px;
+							text-align:	center;			margin-right:	3px;	}
+		.table-cell		{	display:	table-cell;		border:	2px solid #0F0;	
+							width:		200px;			padding:10px;
+							text-align:	center;			}
+		hr				{	margin:		15px 0;			}
+	</style>
+</head>
+<body>
+	<h1>display 속성</h1>
+	<h2>HTML 요소의 표현 방식을 지정한다.</h2>
+	<p class="block">BLOCK</p>
+	<hr>
+	<div class="inline"><span>inline</span> <span>inline</span></div>
+	<hr>
+	<div class="inline-block">inline-block</div>
+	<hr>
+	<div class="none">none</div>
+	<hr>
+	<div>
+		<div class="run-in">run-in box</div>
+		<span>형제 요소가 인라인 박스인 경우</span>
+	</div>
+	<hr>
+	<div>
+		<div class="run-in">run-in box</div>
+		<span>형제 요소가 블록 박스인 경우</span>
+	</div>
+	<hr>
+	<div>
+		<div class="list-item">목록 항목</div>
+		<div class="list-item">목록 항목</div>
+	</div>
+	<hr>
+	<div class="table">
+		<div class="table-caption">테이블 캡션으로 변환합니다.</div>
+		<div class="table-row">
+			<div class="table-header">테이블 제목 셀로 변환합니다.</div>
+			<div class="table-cell">테이블 내용 셀로 변환합니다.</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

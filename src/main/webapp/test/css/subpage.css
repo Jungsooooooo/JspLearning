@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+/* 회사소개 배경 이미지 */
+#sub_img {
+	 width:              971px;
+	 height:             179px;
+	 background-image:   url(../images/company/sub_back.png);
+	 background-repeat: no-repeat;
+	 background-position: left top;
+}
+
+
+/* 서브메뉴 */
+#sub_menu {
+	   width:        238px;
+	   float:        left;
+	   margin:       20px;
+	   font-family:     Verdana, geneva, sana-serif;
+	   font-size:        1em;
+}
+#sub_menu ul{
+	           margin:    20px 0 0 10px;
+	           /* 리스트 옆에 있는 검은 동그라미를 없앤다. */
+	           list-style:  none;
+	
+}
+#sub_menu a {
+	      /* 밑줄을 없앤다. */
+	     text-decoration: none;
+	     color:    #666;
+	     display:     block;
+	     height:   15px;
+	     width:      150px;
+	     padding:     7px;
+	     /* 메뉴들 간의 구분을 위해서 보더 밑부분만 보이게 한다. */
+	     border-bottom-width: 1px;
+	     border-bottom-style:  dotted;
+	     border-bottom-color: #999;
+	     background-image:   url(../images/bullet.gif);
+	     background-repeat:   no-repeat;
+	     background-position: right center;
+	
+}
+
+/* 서브메뉴에 마우스 포인터가 올라가면 */
+#sub_menu a:hover {
+	  background-image:       url(../images/bullet_orange.gif);
+	  background-repeat:        no-repeat;
+	  background-position: right center;
+	  color:    #F90;
+	
+}
+
+ /* 컨텐츠  */
+ article {
+     /*  border:         1px solid #CCC; */
+       float:            right;
+       width:             660px;
+       padding-right:    30px;
+       font-family:     Verdana, Geneva, sans-serif;
+       font-size:         1em;
+       line-height:         1.5em;
+ }
+
+article h1{
+	        font-family:      "Times New Roman", Times, serif;
+	        font-size:            45px;
+	        color:                  #CCC;
+	        margin:                  20px 0;
+	        font-weight:           normal;
+	
+}
+article p{
+	       padding-left:           10px;
+	
+}
+
+figure.ceo{
+	          float:        right;
+	          margin:      5px;    
+	
+}
+
+figcatpion {
+	       text-align:         center;
+	       color:              #39F;
+	
+}
+
+/* history page 관련 */
+
+article .y2011, article .y2010, article .y2009{
+	   /* 년도글자 대신에 그림으로 대체하기 위해서 padding을 사용 */    
+	      padding: 10px 0 0 150px;
+	      border-top-width:   1px;
+	      border-top-style:   solid;
+	      border-top-color:   #999;
+	
+}
+
+/* 년도들 그림으로 대체하기 위해 년도를 보이지 않게 한다.  */
+article .y2011 h3, article .y2010 h3, article .y2009 h3{
+	display:             none;
+	
+}
+
+article .y2011{
+	  background-image:  url(../images/company/2011.jpg);
+	  background-repeat:   no-repeat;
+	  background-position: left top;
+	
+}
+
+article .y2010{
+	  background-image:  url(../images/company/2010.jpg);
+	  background-repeat:   no-repeat;
+	  background-position: left top;
+	
+}
+article .y2009{
+	  background-image:  url(../images/company/2009.jpg);
+	  background-repeat:   no-repeat;
+	  background-position: left top;
+	
+}
+
+article .y2011 dl, article .y2010 dl, article .y2009 dl{
+	 margin:     0 0 10px 0;
+	 padding:    0 0 10px 0;
+	 border-bottom-width:  1px;
+	 border-bottom-style:  dotted;
+	 border-radius:        10px;
+	 border-color:         #CCC;
+	 
+	 
+}
+
+article .y2011 dt, article .y2010 dt, article .y2009 dt{
+	   float:          left;
+	   /*단어의 첫번쨰 글자를 대문자로 바꾼다. */
+	   text-transform: capitalize;
+	   font-family:     Tahoma, Genava, sans-serif;
+	   font-size:        15px;
+	   color:            #39F;
+	   padding-top:      3px;
+	   margin:            0;
+	
+}
+
+article .y2011 dd, article .y2010 dd, article .y2009 dd {
+	            padding:             0 0 0 15px;
+	            line-height:         2em;
+	            background-image:    url(../images/company/h_bullet.gif);
+	            background-repeat:     no-repeat;
+	            background-position:   left, center;
+}
+
+article dl.dot_none{
+	   border-bottom:          none;
+	
+}
+
+/* 고객 센터 화면 관련 */
+
+#sub_img_center{
+	 width:            971px;
+	 height:           179px;
+	 background-image:   url(../images/center/sub_back.png);
+	 background-repeat:     no-repeat;
+	 background-position:  left top;
+}
+
+ /* border-collapse : 표(table)의 테두리와 셀(td)의 테두리 간격을 어떻게 처리할 지를 지정한다.
+      기본값 : separate
+      separate : 표의 테두리와 셀의 테두리 사이에 간격을 둔다.
+      collapse : 표의 테두리와 셀의 테두리 사이의 간격을 없앤다. 겹치는 부분은 한줄로 나타낸다.
+ */
+article table#notice{
+	 width:             670px;
+	 border-collapse:   collapse;
+	
+}
+
+article table#notice th {
+	                height:   20px;                /* 테이블의 전체 높이 지정 */
+	                text-transform:    capitalize; /*영문 첫글자를 대문자로 지정 */
+	                font-size:            14px;    /*글꼴 사이즈*/
+	                font-family:   "Times New Roman" , Times, serif; /*글꼴 모양 지정 */
+	                font-weight:    bold;             /*글꼴 두께 지정 */
+	                padding:        5px;              /*글꼴과 전체 셀과의 간격 조정 */ 
+	                background-image:  url(../images/center/t_back.jpg); /*배경 그림 */
+	                background-repeat:  repeat-x;                        /*배경 그림의 반복 방향*/
+	                background-position: center center;                  /*배경 그림의 위치 */
+	                color:               #FFF;          /* 글꼴 색 지정 */
+	                text-align:          center;        /* 글자 중앙 정렬 */
+	                
+	                
+	
+}
+article th.tno{
+	 border-top-left-radius:    5px;
+	 border-bottom-left-radius: 5px;
+	 width:                     50px;
+	
+}
+
+article th.ttitle{
+	       width:    400px;
+	       letter-spacing:  0.7em;
+	           
+	 
+}
+
+article th.twriter{
+	 width:          100px;
+	 
+	
+	
+}
+
+
+article th.table{
+	 width:      50px;
+	
+}
+
+article th.tread{
+	      border-top-right-radius:   5px;
+	      border-bottom-right-radius: 5px;
+	      width:                      50px;
+}
